@@ -1,0 +1,16 @@
+CREATE TABLE `books` (
+                         `bookid` int(11) NOT NULL AUTO_INCREMENT,
+                         `authorid` int(11) NOT NULL DEFAULT 0,
+                         `title` varchar(55) CHARACTER SET utf8 NOT NULL,
+                         `ISBN` varchar(25) CHARACTER SET utf8 NOT NULL,
+                         `pub_year` smallint(6) NOT NULL DEFAULT 0,
+                         `available` tinyint(4) NOT NULL
+)
+
+INSERT INTO `books` (`bookid`, `authorid`, `title`, `ISBN`, `pub_year`, `available`) VALUES
+                                                                                         (1, 1, 'C++', '88652883', 2005, 1),
+                                                                                         (2, 3, 'Java', '55625637', 2003, 2),
+                                                                                         (3, 5, 'Ruby', '65842365', 2002, 5),
+                                                                                         (4, 1, 'PHP', '63459786', 2001, 1),
+                                                                                         (5, 2, 'C#', '36486358', 2005, 2),
+                                                                                         (6, 4, 'Python', '48795638', 2004, 1);
