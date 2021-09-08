@@ -15,11 +15,10 @@ class CreateProductTable extends Migration
     {
         Schema::create('prodcut', function (Blueprint $table) {
             $table->id();
-
-            $table->integer('productId')->autoIncrement();
-            $table->string('name');
-            $table->integer('price');
-            $table->string('avatar');
+            $table->integer('product_code');
+            $table->string('product_name');
+            $table->double('product_price');
+            $table->string('product_image');
             $table->timestamps();
         });
     }
